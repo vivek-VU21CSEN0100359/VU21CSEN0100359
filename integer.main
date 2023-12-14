@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    double number;
+
+    // Get input from the user
+    printf("Enter a number: ");
+    scanf("%lf", &number);
+
+    // Check if the number is an integer
+    if (number == (int)number) {
+        printf("The number %.2lf is an integer.\n", number);
+    } else {
+        printf("The number %.2lf is not an integer.\n", number);
+    }
+
+    return 0;
+}
